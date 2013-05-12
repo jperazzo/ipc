@@ -4,5 +4,11 @@
     <string name="app_name">Changuito</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_seguir_producto">SeguirProducto</string>
+    <string name="title_activity_cargar_producto">CargarProducto</string>
+    <string name="title_activity_armar_lista">ArmarLista</string>
+    <string name="title_activity_ver_estadisticas">VerEstadisticas</string>
+    <string name="title_activity_elegir_producto">ElegirProducto</string>
 
 </resources>

@@ -67,12 +67,21 @@ public class MainActivity extends Activity {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		String currentDate = sdf.format(new Date());
 		txtFecha.setText(currentDate);
-		Button agregar=(Button) findViewById(R.id.btnAgregar);
+		ImageButton agregar=(ImageButton) findViewById(R.id.btnAgregar);
 		
+		
+		EditText txtDescripcion=(EditText) findViewById(R.id.editDescripcion);
+		txtDescripcion.setText( 	MyProperties.getInstance().productoseleccionado);
+		EditText txtCodigo=(EditText) findViewById(R.id.editCodigo);
+	  	 
+		txtCodigo.setText(MyProperties.getInstance().codigoProducto);
+	        
 		agregar.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
+				
+		  		
 				insertarDato();
 				
 			}
@@ -213,6 +222,9 @@ public class MainActivity extends Activity {
 			//Process the response data (here we just display it)
 			if (intent.getAction().equalsIgnoreCase(ACTION_SUBIR)){
 			
+				  Intent intent2 = new Intent(context, MenuActivity.class);
+	                intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// This flag ensures all activities on top of the CloseAllViewsDemo are cleared.
+	                context.startActivity(intent2);
 	 			
 			}
 			

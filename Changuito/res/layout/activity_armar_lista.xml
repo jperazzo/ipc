@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/app_blue"
+    tools:context=".ArmarLista" >
+     <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" >
+
+               <ImageView
+                   android:id="@+id/imageView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="top"
+                   android:background="@drawable/changuito" />
+               
+                   <ImageButton
+                       android:id="@+id/imageButton1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="right"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="10dp"
+                       android:background="@drawable/headerconfig"
+                       android:src="@drawable/headerconfig" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbox"
+            android:ems="10"
+            android:hint="Filtro de productos"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <requestFocus />
+        </EditText>
+        
+           <ListView
+               android:id="@+id/listView1"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="10dp"
+    android:text="Total estimado:"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#ffffff"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:text="$0.0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+               
+        </FrameLayout>
+
+</RelativeLayout>
