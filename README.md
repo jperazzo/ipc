@@ -1,4 +1,3 @@
-ipc
-===
+**IPC - ïndice de Precios Colaborativo**
 
-ïndice de precios colaborativo
+Este repositorio es la base del proyecto *Changuito*, disponible en Android y próximamente en iOS.
